@@ -31,6 +31,7 @@ nav{
 }
 nav img{
   width: 90px;
+  border-radius: 10px;
 }
 .contact{
   background-color: red;
@@ -47,9 +48,12 @@ nav img{
   position: relative;
 }
 .nav-links ul li a{
-  color: orange;
+  color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 17px;
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 1px;
 }
 .nav-links ul li::after{
   content: " ";
@@ -74,6 +78,31 @@ nav img{
 }
 .text-box h1{
   font-size: 50px;
+  border: 1px;
+  color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.text-box h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: greenyellow;
+  -webkit-text-stroke-color: greenyellow;
+  border-right: 10px solid greenyellow;
+  overflow: hidden;
+  animation: animate 10s linear infinite;
+}
+@keyframes animate{
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
 }
 .text-box p{
   margin: 10px 0 40px;
@@ -253,6 +282,7 @@ h3{
   width: 100%;
   padding-bottom: 0%;
   padding-top: 10%;
+  float: right;
 }
 .testimonial p{
   text-align: center;
