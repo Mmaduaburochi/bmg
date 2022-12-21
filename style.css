@@ -13,7 +13,7 @@ html,body{
 }
 
 .header{
-background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/snowfall.gif);
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/newchris.jpg);
  min-height: 100vh;
   width: 100%;background-position: center;
   background-size: cover;
@@ -68,6 +68,50 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
+.snow,.snow:after,.snow:before{
+  content: "";
+  position: absolute;
+  top: -650px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+  radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+  radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+  radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+  radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+  radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+  radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+  radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+  radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+  background-size: 650px 650px;
+
+  animation: snowAnim 3s linear;
+  animation-iteration-count: infinite;
+
+}
+.snow:after{
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-direction: reverse;
+  animation-duration: 6s;
+}
+.snow:before{
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+}
+@keyframes snowAnim{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(650px);
+  }
+}
+
 .text-box{
   width: 90%;
   color: white;
@@ -199,8 +243,6 @@ h3{
   margin-right: auto;
 }
 .footer{
-  background: rgb(49, 67, 129);
-  color: white;
   text-align: center;
 }
 .footer h4{
@@ -212,6 +254,7 @@ h3{
 }
 .footer .icons{
   text-align: center;
+  font-size: 30px;
 }
 .icons .fa{
   color: red;
@@ -224,6 +267,14 @@ h3{
 .fa-heart-o{
   color: red;
 }
+.copyright{
+  text-align: center;
+  font-style: normal;
+  background: lightblue;
+}
+
+
+
 .banner{
   background-color: lightgreen;
   text-align: center;
@@ -300,8 +351,8 @@ h3{
     overflow-x: hidden;
   }
   .header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/snowfall.gif);
-     min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/newchris.jpg);
+      min-height: 100vh;
       width: 100%;background-position: center;
       background-size: cover;
       position: relative;
@@ -509,7 +560,7 @@ h3{
   text-align: center;
   background: lightblue;
 }
-.copyright p{
+.copyright .fa fa-copyrigh{
   font-family: sans-serif;
 
 
