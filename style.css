@@ -340,6 +340,8 @@ h3{
 }
 .footer{
   text-align: center;
+  background-color: black;
+  color: white;
 }
 .footer .icons{
   text-align: center;
