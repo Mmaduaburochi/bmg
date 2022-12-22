@@ -13,7 +13,7 @@ html,body{
 }
 
 .header{
-background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/background1.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/snowfall.gif);
  min-height: 100vh;
   width: 100%;background-position: center;
   background-size: cover;
@@ -68,6 +68,7 @@ nav img{
 .nav-links ul li:hover::after{
   width: 100%;
 }
+
 .text-box{
   width: 90%;
   color: white;
@@ -198,12 +199,19 @@ h3{
   width: 100%;
   margin-right: auto;
 }
+.footer{
+  text-align: center;
+}
 .footer h4{
   text-align: center;
 }
 .footer p{
   text-align: center;
 
+}
+.footer .icons{
+  text-align: center;
+  font-size: 30px;
 }
 .icons .fa{
   color: red;
@@ -216,6 +224,14 @@ h3{
 .fa-heart-o{
   color: red;
 }
+.copyright{
+  text-align: center;
+  font-style: normal;
+  background: lightblue;
+}
+
+
+
 .banner{
   background-color: lightgreen;
   text-align: center;
@@ -230,7 +246,6 @@ h3{
 .Phone p{
   text-align: center;
 }
-
 .Email h3{
   text-align: center;
 }
@@ -271,7 +286,7 @@ h3{
 
 
 
-
+/*-----------------------------------@media query-----------------------------------------------------*/
 
 
 
@@ -290,12 +305,19 @@ h3{
     overflow-x: hidden;
   }
   .header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/background1.jpg);
-     min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/snowfall.gif);
+      min-height: 100vh;
       width: 100%;background-position: center;
       background-size: cover;
       position: relative;
     }
+    .header a{
+      color: white;
+      display:  contents;
+      font-family: Times New Roman;
+      font-size: small;
+    }
+    
     nav img{
       width: 60px;
       border-radius: 10px;
@@ -328,7 +350,7 @@ h3{
       height: 50px;
       color: greenyellow;
       -webkit-text-stroke-color: greenyellow;
-      border-right: 2px solid greenyellow;
+      border-right: 1px solid greenyellow;
       overflow: hidden;
       animation: animate 10s linear infinite;
     }
@@ -344,7 +366,7 @@ h3{
   .text-box p{
     font-size: 13px;
     text-align: center;
-    margin-bottom: -50px; 
+    margin-bottom: -50px;
   }
   button  {
     display: inline-block;
@@ -405,7 +427,6 @@ h3{
     flex-direction: column;
   }
 
-}
 
 .pictures{
   width: 80%;
@@ -456,17 +477,9 @@ h3{
 
 .testimonial h1{
   text-align: center;
-  padding: 50px;
-  width: 100%;
-  padding-bottom: 0%;
-  padding-top: 10%;
-  float: right;
 }
 .testimonial p{
   text-align: center;
-  padding: 50px;
-  width: 100%;
-  padding-top: 0%;
 
 }
 
@@ -496,6 +509,17 @@ h3{
   margin-top: 15px;
   text-align: left;
 }
+.copyright{
+  text-align: center;
+  background: lightblue;
+}
+.copyright .fa fa-copyrigh{
+  font-family: sans-serif;
+
+
+}
+}
+
 
 
   
