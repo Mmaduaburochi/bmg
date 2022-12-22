@@ -13,7 +13,7 @@ html,body{
 }
 
 .header{
-background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/nnn.gif);
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/newfall.gif);
  min-height: 100vh;
   width: 100%;background-position: center;
   background-size: cover;
@@ -384,7 +384,7 @@ h3{
     overflow-x: hidden;
   }
   .header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/nnn.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/newchris.jpg);
      min-height: 100vh;
       width: 100%;background-position: center;
       background-size: cover;
@@ -430,19 +430,19 @@ h3{
       color: red;
       -webkit-text-stroke-color: white;
       -webkit-backdrop-filter: blur(#fff 1px);
+      border-right: 1px solid red;
       overflow: hidden;
-      text-shadow: white 2px 2px 2px;
       animation: animate 10s linear infinite;
     }
     @keyframes animate{
-        0%{
-        transform: translateX(0);
+      0%,10%,100%{
+        width: 0;
       }
-      100%{
-        transform: translateX(-100%);
+      70%,90%{
+        width: 100%;
       }
     }
-        
+    
   .text-box p{
     font-size: 13px;
     text-align: center;
