@@ -1,23 +1,412 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/056a0a1c98.js" crossorigin="anonymous"></script>
+  <title>About Us</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: rgb(7, 10, 3);
+    }
+    .status{
+      background-color: lightblue;
+      height: 80px;
+      padding: 5px;
+    }
+    .status h3{
+      line-height: 40px;
+      padding: 0px 20px;
+      color: white;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: black 2px 2px 3px;
+    }
+    .status span{
+      color: yellow;
+    }
+    .navlinks ul{
+      list-style: none;
+      float: right;
+      margin-top: -50px;
+    }
+    .navlinks ul li{
+      display: inline-block;
+      padding: 0px 25px;
 
-  </head>
-  <body>
+    }
+    .navlinks ul li a{
+      text-decoration: none;
+      font-weight: bolder;
+      color: white;
+      font-family: cursive;
+      text-shadow: black 2px 2px 3px;
+    }
+    .navlinks ul li a span{
+      color: red;
+    }
+    .navlinks ul li a:hover{
+      color: red;
+      transition: 1s;
+    }
+    .header h1{
+      text-align: center;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: blue 0px 0px 5px;
+      margin: 100px 100px;
+      color: white;
+    }
+    .gallery{
+      margin: 0px 220px;
+      border: 2px solid #ccc;
+      width: 900px;
+      box-shadow: black 1px 1px 2px;
+      background-color: white;
+    }
+    .desc{
+      padding: 15px;
+      text-align: center;
+    }
+    .gallery2{
+      margin: 100px 220px;
+      border: 2px solid #ccc;
+      width: 900px;
+      box-shadow: black 1px 1px 2px;
+      background-color: white;
+    }
+    .gallery3{
+      margin: 100px 220px;
+      border: 2px solid #ccc;
+      width: 900px;
+      box-shadow: black 1px 1px 2px;
+      background-color: white;
+    }
+    .container{
+      margin: 200px 220px;
+      border: 2px solid #ccc;
+      width: 900px;
+      box-shadow: black 1px 1px 2px;
+      background-color: rgba(255, 255, 255, 0.562);
+    }
+    .container h2{
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .container p{
+      text-align: center;
+      padding: 40px;
+    }
+    .box{
+      margin: 200px 477px;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .box::before{
+      content: "";
+      position: absolute;
+      inset: -10px 140px;
+      background: linear-gradient(315deg,#00ccff,#d400d4);
+      transition: 0.5s;
+      animation: animate 4s linear infinite;
+    }
+    .box:hover::before{
+      inset: -20px 0px;
+    }
+    @keyframes animate{
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+    .box::after{
+      content: "";
+      position: absolute;
+      inset: 6px;
+      background: #162052;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .content{
+      position: absolute;
+      inset: 30px;
+      border: 6px solid #070a1c;
+      z-index: 3;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .content img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .us h1{
+      color: white;
+      text-align: center;
+      font-weight: bolder;
+font-family: sans-serif;
+padding-bottom: 0px;
+text-shadow: blue 2px 2px 2px;
+    }
+    .fd {
+      color: white;
+      text-align: center;
+      margin-top: -170px;
+      text-shadow: #d400d4 2px 2px 2px;
+    }
+    .navlinks .fa{
+      display: none;
+    }
 
-    <div>
-      <div class="banner">
-        <h2>About Us</h2>
-    <p>BMG financial world is a corporate financial platform that links investors to profitable<br> investment and also render financial advice on type of investment to opt for, MBG finance give you the opportunity<br> to predict your financial movement. Money mismanaged is money lost. With BMG finance you manage and grow your money flow with our lucrative investment <br>portfolio. An investment is an asset that will eventually provide value that exceeds the initial cost. The term investment can <br>apply to almost any asset, including intangible assets such as Real estate, Liquidity and Agriculture,<br> In terms of the stock market, investing typically refers to the purchase of stocks or bonds. <br>These securities are designed to provide an investor with future value that will exceed their initial cost. Investments can also be made in other assets such<br> as Investing in real estate, for example, could mean buying an inexpensive property, renovating to increase its value, and then selling or leasing for more than the original cost.</p>
+    @media all and (max-width: 700px) {
+      html,body{
+      margin: 0;
+      padding: 0;
+      background-color: rgb(7, 10, 3);
+      overflow-x: hidden;
+    }
+    .status{
+      background-color: lightblue;
+      height: 60px;
+      width: 363px;
+      padding: 5px;
+    }
 
-    <a href="index.html">HOME</a>
+      .header h1{
+      text-align: center;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: blue 0px 0px 5px;
+      margin: 25px 25px;
+      font-size: 20px;
+      color: white;
+    }
+    .gallery, .gallery2, .gallery3{
+      width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 3px;
+  background: linear-gradient(rgb(146, 120, 124),rgb(182, 177, 147));
+    }
+    .gallery a,.gallery2 a,.gallery3 a{
+      max-width: 314px;
+    }
+    .gallery img, .gallery2 img,.gallery3 img{
+      width: 100%;
+      height: 150px;
+      
+    }
+    .container{
+      margin-top: 100px;
+      margin-left: -4px;
+      max-width: 100%;
+      border-radius: 0px;
+      border: 2px solid #ccc;
+      box-shadow: black 1px 1px 2px;
+      background-color: rgba(255, 255, 255, 0.562);
+    }
+    .container h2{
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .container p{
+      text-align: center;
+      padding: 40px;
+    }
+    .us h1{
+      font-weight: 100;
+      font-size: large;
+      margin-top: -100px;
+    }
+    .box{
+      margin: 50px auto;
+      position: relative;
+      width: 150px;
+      height: 150px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+        .box::before{
+      content: "";
+      position: absolute;
+      inset: -10px 140px;
+      background: linear-gradient(315deg,#00ccff,#d400d4);
+      transition: 0.5s;
+      z-index: 1;
+
+      animation: animate 4s linear infinite;
+    }
+    .box::before{
+      inset: -20px 0px;
+    }
+    @keyframes animate{
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+    .box::after{
+      content: "";
+      position: absolute;
+      inset: 3px;
+      background: #162052;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .content{
+      position: absolute;
+      inset: 4px;
+      border: 1px solid #070a1c;
+      z-index: 3;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .content img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .fd {
+      color: white;
+      text-align: center;
+      margin-top: -40px;
+      text-shadow: #d400d4 1px 1px 1px;
+    }
+    .fd h6{
+      font-weight: 100;
+
+    }
+    .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background: orangered;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+    transition: 1s;
+    text-align: left;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-links .fa{
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 27px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+
+
+
+
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="status">
+    <h3><span>BMG</span> Financial World</h3>
+    <div class="navlinks" id="navLinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html"><span>ABOUT</span></a></li>
+        <li><a href="">SERVICES</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
   </div>
-  </body>
+  <section class="header">
+    <h1>About BMG Financial World</h1>
+  </section>
+
+  <section class="gallery">
+    <a target="_blank" href="img/estate.jpg"><img src="img/estate.jpg" width="900px" height="400px"></a>
+    <div class="desc">Real Estate investment consists of investing on property which entails Land property and Building, Real Estate investment is extremely crucial and 100% profitable with zero chance of incuring loss, Land and Building property always appreciate unlike other property like Vehicle, jewelry, furniture and others. We patner with many top real Estate company where you can buy land as low as #700,000.00 per plot.
+    </div>
+  </section>
+  <section class="gallery2">
+    <a target="_blank" href="img/agriculture.jpg"><img src="img/agriculture.jpg" width="900px" height="400px"></a>
+    <div class="desc">Investment in agriculture is relatively a low-risk portfolio diversification; offering profitable returns financially and also ensuring food security in the economy, Investors also have access to an assortment of publicly-traded companies that operate in the farming sector. These companies range from those that directly grow and produce crops to those working in a variety of industries that support farmers.
+    </div>
+  </section>
+  <section class="gallery3">
+    <a target="_blank" href="img/cypto.jpg"><img src="img/cypto.jpg" width="900px" height="400px"></a>
+    <div class="desc">Forex (FX) is a frankenword of foreign currency and exchange. Foreign exchange is the process of changing one currency into another for a variety of reasons, usually for commerce or trading.Trading currencies can be risky and complex. Because there are such large trade flows within the system, it is difficult for rogue traders to influence the price of a currency. This system helps create transparency in the market for investors with access to interbank dealing.
+    </div>
+  </section>
+  <div class="container">
+    <h2>About US</h2>
+    <p>BMG financial world is a corporate financial platform that links investors to profitable investment and also render financial advice on type of investment to opt for, MBG finance give you the opportunity to predict your financial movement. Money mismanaged is money lost. With BMG finance you manage and grow your money flow with our lucrative investment portfolio. An investment is an asset that will eventually provide value that exceeds the initial cost. The term investment can apply to almost any asset, including intangible assets such as Real estate, Liquidity and Agriculture, In terms of the stock market, investing typically refers to the purchase of stocks or bonds. These securities are designed to provide an investor with future value that will exceed their initial cost. Investments can also be made in other assets such as Investing in real estate, for example, could mean buying an inexpensive property, renovating to increase its value, and then selling or leasing for more than the original cost.</p>
+  </div>
+<div class="us">
+  <h1>Meet Our Executives</h1>
+</div>
+  <div class="box">
+    <div class="content">
+      <img src="img/buchiii.jpg" alt="">
+    </div>
+  </div>
+  <div class="fd">
+    <h6>Founder<br> Ezeani Mmaduabuchi Boniface</h6>
+  </div>
+
+  <!----------JavaScript for toggle Menu-------->
+
+
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+    </script>
+
+
+  
+</body>
 </html>
