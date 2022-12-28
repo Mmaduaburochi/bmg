@@ -17,47 +17,49 @@
       padding: 0;
       background-color: rgb(7, 10, 3);
     }
-    .status{
+    .header{
       background-color: lightblue;
       height: 80px;
       padding: 5px;
     }
-    .status h3{
-      line-height: 40px;
-      padding: 0px 20px;
+    .header a{
+      text-decoration: none;
+      float: right;
+      line-height: 10px;
+      padding: 0px 10px;
       color: white;
       font-weight: bolder;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-shadow: black 2px 2px 3px;
     }
-    .status span{
+    .header span{
       color: yellow;
     }
-    .navlinks ul{
+    .nav-links ul{
       list-style: none;
       float: right;
       margin-top: -50px;
     }
-    .navlinks ul li{
+    .nav-links ul li{
       display: inline-block;
       padding: 0px 25px;
 
     }
-    .navlinks ul li a{
+    .nav-links ul li a{
       text-decoration: none;
       font-weight: bolder;
       color: white;
       font-family: cursive;
       text-shadow: black 2px 2px 3px;
     }
-    .navlinks ul li a span{
+    .nav--links ul li a span{
       color: red;
     }
-    .navlinks ul li a:hover{
+    .nav-links ul li a:hover{
       color: red;
       transition: 1s;
     }
-    .header h1{
+    .ABF h1{
       text-align: center;
       font-weight: bolder;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -171,8 +173,12 @@ text-shadow: blue 2px 2px 2px;
       margin-top: -170px;
       text-shadow: #d400d4 2px 2px 2px;
     }
+    .fd h6{
+      font-weight: bolder;
+    }
     .navlinks .fa{
-      display: none;
+      color: white;
+      margin-top: -50px;
     }
 
     @media all and (max-width: 700px) {
@@ -182,20 +188,29 @@ text-shadow: blue 2px 2px 2px;
       background-color: rgb(7, 10, 3);
       overflow-x: hidden;
     }
-    .status{
+    .header{
       background-color: lightblue;
-      height: 60px;
+      height: 40px;
       width: 363px;
       padding: 5px;
     }
+    .header h3{
+      line-height: 5px;
+      padding: 0px 4px;
+      color: white;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: black 2px 2px 3px;
+    }
 
-      .header h1{
+
+      .ABF h1{
       text-align: center;
       font-weight: bolder;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-shadow: blue 0px 0px 5px;
       margin: 25px 25px;
-      font-size: 20px;
+      font-size: 15px;
       color: white;
     }
     .gallery, .gallery2, .gallery3{
@@ -321,8 +336,10 @@ text-shadow: blue 2px 2px 2px;
     color: white;
     text-decoration: none;
     font-size: 13px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  .nav-links .fa{
+  nav .fa{
     display: block;
     color: white;
     margin: 10px;
@@ -332,37 +349,35 @@ text-shadow: blue 2px 2px 2px;
   .nav-links ul{
     padding: 30px;
   }
-
-
-
-
-
-    }
+  }
 
   </style>
 </head>
 <body>
-  <div class="status">
-    <h3><span>BMG</span> Financial World</h3>
-    <div class="navlinks" id="navLinks">
-      <i class="fa fa-times" onclick="hidemenu()"></i>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html"><span>ABOUT</span></a></li>
-        <li><a href="">SERVICES</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-    <i class="fa fa-bars" onclick="showMenu()"></i>
-  </div>
   <section class="header">
+    <nav>
+      <a href="index.html"><span>BMG</span> Financial World</a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="https://crypto.com/">SERVICES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+<section class="ABF">
     <h1>About BMG Financial World</h1>
   </section>
 
   <section class="gallery">
     <a target="_blank" href="img/estate.jpg"><img src="img/estate.jpg" width="900px" height="400px"></a>
-    <div class="desc">Real Estate investment consists of investing on property which entails Land property and Building, Real Estate investment is extremely crucial and 100% profitable with zero chance of incuring loss, Land and Building property always appreciate unlike other property like Vehicle, jewelry, furniture and others. We patner with many top real Estate company where you can buy land as low as #700,000.00 per plot.
+    <div class="desc">Real Estate investment consists of investing on property which entails Land property and Building, Real Estate investment is extremely crucial and 100% profitable with zero chance of incuring loss, Land and Building property always appreciate unlike other property like Vehicle, jewelry, furniture and others. We partner with many top real Estate company where you can buy land as low as #700,000.00 per plot.
     </div>
   </section>
   <section class="gallery2">
