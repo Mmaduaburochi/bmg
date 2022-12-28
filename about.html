@@ -24,13 +24,15 @@
     }
     .header a{
       text-decoration: none;
-      float: right;
-      line-height: 10px;
+      line-height: 50px;
       padding: 0px 10px;
       color: white;
       font-weight: bolder;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-shadow: black 2px 2px 3px;
+    }
+    nav .fa{
+      display: none;
     }
     .header span{
       color: yellow;
@@ -186,6 +188,7 @@ text-shadow: blue 2px 2px 2px;
       margin: 0;
       padding: 0;
       background-color: rgb(7, 10, 3);
+      max-width: 369px;
       overflow-x: hidden;
     }
     .header{
@@ -194,6 +197,17 @@ text-shadow: blue 2px 2px 2px;
       width: 363px;
       padding: 5px;
     }
+    .header a{
+      text-decoration: none;
+      float: right;
+      line-height: 10px;
+      padding: 0px 10px;
+      color: white;
+      font-weight: bolder;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-shadow: black 2px 2px 3px;
+    }
+
     .header h3{
       line-height: 5px;
       padding: 0px 4px;
@@ -327,7 +341,6 @@ text-shadow: blue 2px 2px 2px;
     right: -200px;
     z-index: 2;
     transition: 1s;
-    text-align: left;
   }
   .nav-links ul li{
     display: block;
@@ -336,15 +349,26 @@ text-shadow: blue 2px 2px 2px;
     color: white;
     text-decoration: none;
     font-size: 13px;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   nav .fa{
     display: block;
     color: white;
+    text-shadow: black 2px 2px 2px;
     margin: 10px;
-    font-size: 27px;
+    font-size: 22px;
     cursor: pointer;
+  }
+  nav .fa span{
+    font-size: 18px;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   }
   .nav-links ul{
     padding: 30px;
@@ -358,7 +382,7 @@ text-shadow: blue 2px 2px 2px;
     <nav>
       <a href="index.html"><span>BMG</span> Financial World</a>
       <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <i class="fa fa-times" onclick="hideMenu()"> <span>Menu</span></i>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
@@ -367,7 +391,7 @@ text-shadow: blue 2px 2px 2px;
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
+      <i class="fa fa-bars" onclick="showMenu()"> <span>Menu</span></i>
     </nav>
   </section>
 
